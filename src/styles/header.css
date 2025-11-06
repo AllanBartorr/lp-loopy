@@ -1,0 +1,131 @@
+header{
+    width: 100%;
+    /* Ajuste de Padding: 10px de altura mínima e 2% de margem lateral */
+    padding: 10px 2%; 
+    position: sticky;
+    top: 0;
+    background-color: #91BEFF;
+    z-index: 3;
+    box-sizing: border-box; 
+}
+
+/* Elemento de Navegação <nav id="navbar"> (Flexbox Container) */
+#navbar{
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    /* Distribui o espaço entre Logo, Lista e Botão */
+    justify-content: space-between; 
+    padding: 0; 
+}
+
+/* Logo (Imagem ou Icone) */
+#nav-logo{
+    font-size: 20px;
+    color: blue;
+}
+.logo-header{
+    /* Use uma largura relativa, mas pequena, para o Flexbox gerenciar */
+    max-width: 100px; /* Exemplo de limite de tamanho */
+    width: auto; /* Deixa o Flexbox e a imagem controlarem */
+    height: auto;
+}
+
+/* Lista de Navegação <ul id="nav_list"> */
+#nav_list{
+    display: flex;
+    list-style: none;
+    /* ❌ CORREÇÃO: REMOVEMOS width: 100% que estava quebrando o layout */
+    /* width: 100%; */ 
+    align-items: center; /* Centraliza verticalmente os itens da lista */
+    padding: 0;
+    margin: 0;
+    /* Use 'gap' para espaçamento mais limpo entre os links (moderno) */
+    gap: 20px; 
+}
+
+/* Itens da Lista (links) */
+#nav_list .nav-item{
+    /* Se você usar 'gap' acima, esta margem pode ser removida/ajustada */
+    /* margin-left: 20px; */
+    margin: 0;
+}
+.nav-item a{
+    text-decoration: none;
+    color: black ;
+    /* A unidade para font-weight é unitless */
+    font-weight: 600; 
+}
+
+/* Link Ativo */
+.nav-item.active a{
+    color: rgb(71, 71, 155);
+    border-bottom: 3px solid #330889;
+}
+
+/* Botões Mobile (Escondidos por padrão) */
+#mobile_btn{
+    display: none;
+}
+#mobile_menu{
+    display: none;
+}
+
+/* ======================================================= */
+/* 3. SCROLL REVEAL (Animação das Sections)                */
+/* ======================================================= */
+
+/* 1. ESTADO INICIAL (Elemento escondido) */
+.section-hidden {
+    opacity: 0; /* Totalmente invisível */
+    transform: translateY(50px); /* Desloca o elemento 50px para baixo */
+    /* Define a transição para suavizar a entrada */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out; 
+}
+
+/* 2. ESTADO FINAL (Elemento visível/animado) */
+/* Esta classe é adicionada pelo JavaScript (Intersection Observer) */
+.section-visible {
+    opacity: 1; 
+    transform: translateY(0); /* Move para a posição original (animado) */
+}
+
+/* ======================================================= */
+/* 4. MEDIA QUERY (Responsividade)                         */
+/* ======================================================= */
+
+@media screen and (max-width: 1170px){
+    /* Oculta os itens normais (lista e botão 'Começar Agora') */
+    #nav_list, #navbar .btn-default{
+        display: none;
+    }
+    
+    /* Exibe o botão mobile */
+    #mobile_btn{
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    
+    /* Menu Mobile ativo/aberto */
+    #mobile_menu.active{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Estilize o menu aqui (ex: largura total, cor de fundo) */
+    }
+    
+    /* Lista de links dentro do menu mobile */
+    #mobile_nav_list{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+    
+    #mobile_nav_list .nav-item{
+        list-style: none;
+        text-align: center;
+    }}
