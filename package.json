@@ -11,10 +11,11 @@
     "react-dom": "^19.2.0",
     "react-scripts": "5.0.1",
     "scrollreveal": "^4.0.9",
+    "serve": "^14.2.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=5000 HOST=0.0.0.0 DANGEROUSLY_DISABLE_HOST_CHECK=true react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
