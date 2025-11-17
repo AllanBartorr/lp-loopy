@@ -12,10 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 60px; /* Aumentei a distância entre o logo e o conteúdo */
-    
-    /* Centraliza e limita a largura total da seção em monitores grandes */
-
+    gap: 60px; 
     margin: 0 auto; 
     background-color: #ffffff;
     border-radius: 20% 30% 0% 0%;
@@ -122,6 +119,7 @@
         flex-direction: column; /* Coloca logo e conteúdo um abaixo do outro */
         gap: 40px;
         padding: 50px 20px;
+        border-radius: 0%;
     }
 
     #logoTest {
@@ -138,6 +136,7 @@
 @media (max-width: 600px) {
     #testimonials {
         padding: 30px 10px;
+        border-radius: 0%;
     }
     
     #logoTest {

@@ -126,13 +126,12 @@
     
     #function {
         padding: 30px 10px;
+        border-radius: 10%;
     }
 
     #function .section-title {
         font-size: 1.8rem;
     }
-    
-    /* Remove a transformação no hover em telas pequenas para evitar bugs */
     .grid-function-card:hover {
         transform: none; 
         box-shadow: 0 4px 15px var(--shadow-light); 

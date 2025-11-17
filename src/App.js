@@ -273,7 +273,7 @@ useEffect(() => {
                 </section>
                 {/* SEÇÃO 3: Planos (Index 2) */}
                 <section id='FAQ'>
-                    <img src="img/Faq.png" id="img-faq" alt="faq"/> 
+                    
                     <div className="App">
                     <h2 className="section-title"> FAQ</h2>
                     <FAQSection /> 

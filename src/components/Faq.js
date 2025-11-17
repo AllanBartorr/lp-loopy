@@ -6,7 +6,6 @@ const faqData = [
   { question: "O Loopy pode ser conectado a quais canais?", answer: "O Loopy oferece integração com o WhatsApp Business App, tornando-o um canal de comunicação e conversão muito mais potente." },
   { question: "Qual é a diferença entre o WhatsApp Business App e o Loopy?", answer: "O Loopy é um produto da Mutant que permite adicionar recursos exclusivos do WhatsApp API da Meta, tornando o uso do WhatsApp Business App mais sofisticado. Com a integração, você poderá usar Inteligência Artificial para responder seus clientes e criar campanhas segmentadas de mensagem em massa diretamente pela plataforma.Essa versão é ideal para empresas que buscam escalar o atendimento sem perder a qualidade." },
   { question: "Perco meu histórico de conversa com meus clientes?", answer: "Não! A integração do Loopy com o seu WhatsApp Business App mantém todo o histórico de conversas no aplicativo." },
-  { question: "Como posso conectar meu WhatsApp Business ao Loopy?", answer: "" },
   { question: "O que acontece se o assistente virtual não souber responder a alguma solicitação?", answer: "O Loopy está equipado para lidar com situações em que o assistente virtual encontra limitações. Se uma pergunta ou solicitação do cliente não puder ser resolvida automaticamente, o sistema encaminha a conversa, de forma inteligente, para um atendente humano. Isso ocorre de maneira fluida, garantindo que o cliente receba a assistência necessária sem interrupções ou atrasos. Esse processo de transbordo para atendimento humano é parte essencial da estratégia de garantir um serviço de atendimento ao cliente de alta qualidade." },
   { question: "Como posso garantir que tenho controle do assistente virtual?", answer: "Você pode monitorar e acompanhar todos os atendimentos em tempo real pelo próprio WhatsApp Business App e, se necessário, intervir nas conversas para manter a qualidade e a eficiência do atendimento." },
   { question: "Vou perder a proximidade com meu cliente?", answer: "De forma alguma! O Loopy é projetado para aumentar a eficiência do seu atendimento enquanto mantém a qualidade e a personalização das interações. Com recursos como Inteligência Artificial segmentação de público, você pode garantir que cada cliente receba uma experiência de atendimento acolhedora e adaptada às suas necessidades.Além disso, o sistema permite que atendentes humanos assumam a conversa sempre que necessário, garantindo que o toque pessoal não se perca." },
@@ -43,7 +42,7 @@ const FAQSection = () => {
   return (
     <div className="faq-container">
       {/* Título Principal */}
-      <h1 className="main-title">Com o Loopy, ter um contato inteligente é muito mais fácil.</h1>
+      <h1 className="main-title">Com o <span>Loopy</span>, ter um contato inteligente é muito mais fácil.</h1>
       
       {/* Subtítulo */}
       <h2 className="subtitle">Veja as principais dúvidas ao implementar o Loopy:</h2>
