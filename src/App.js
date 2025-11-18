@@ -287,7 +287,7 @@ useEffect(() => {
             
             {/* --- FOOTER --- */}
 <footer id="footer">
-    <img src="img/wave.png" id="img-footer" alt="ondadecorativa"/> 
+   
     <div id="footer-main-content">
         
         {/* COLUNA 1: Logo e Descrição */}

@@ -449,7 +449,7 @@ export default function App() { // Componente principal App, padrão para a visu
 
   return (
     // Fundo principal alterado para a cor #91BEFF e texto padrão para zinc-950
-    <div className="min-h-screen w-full bg-[#91BEFF] text-zinc-950 font-sans">
+    <div className="min-h-screen w-full bg-[#ffffff] text-zinc-950 font-sans">
       <style>
         {`
           /* Custom track for the range input for better aesthetics */
